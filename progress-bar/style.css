@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+#container {
+    padding: 50px 20px;
+    margin: 40px 0 50px 0;
+    background-color: white;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    height: 15px;
+    width: 40vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.scroll {
+    border-radius: 20px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    transition: all .5s ease-in-out;
+}
+
+.btns {
+    margin: 50px 0 0 0;
+}
+
+span {
+    position: absolute;
+    padding: 5px 9px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    border: 5px solid black;
+}
+
+.span-1 {
+    left: 0px;
+}
+
+.span-2 {
+    left: 32%;
+}
+
+.span-3 {
+    left: 65%;
+}
+
+.span-4 {
+    right: 0px;
+}
+
+.btns {
+    background-color: white;
+}
+
+button {
+    margin: 0 20px;
+    width: 100px;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background-color: blue;
+    transition: all .5s ease-in-out;
+}
+
+.next {
+    background-color: blue;
+}
+
+.previous {
+    background-color: black;
+}
+
+.next-bor {
+    border-color: blue;
+    transition: all .8s ease-in-out;
+}
+
+.disable {
+    cursor: not-allowed;
+    background-color: grey;
+    color: white;
+    opacity: 0.5;
+}
