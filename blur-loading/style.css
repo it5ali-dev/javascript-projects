@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.bg {
+    background: url("./nature.jpg") no-repeat center center / cover;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+    filter: blur(0px);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.load {
+    font-size: 50px;
+    color: #a3b1c3;
+}
