@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        /* width: 100vw; */
+      }
+      .main {
+        background: url("./assets/main.jpg") center no-repeat;
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+      }
+      .text {
+        display: inline-block;
+        color: white;
+        transform: translate(5%, 30%);
+      }
+      .text > h1:first-child {
+        font-size: 80px;
+        width: inherit;
+      }
+      .cards {
+        width: 100%;
+      }
+      .subscribe {
+        width: 10vw;
+      }
+    </style>
+
+    <title>Clothing Store</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand">Jeans Store</a>
+        <form class="d-flex">
+          <button
+            class="btn btn-outline-success btn-success text-white"
+            type="submit"
+          >
+            Search
+          </button>
+          <button
+            class="btn btn-outline-success btn-primary mx-3 text-white"
+            type="submit"
+          >
+            Cart
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div class="main">
+      <div class="text">
+        <h1>New Arrival</h1>
+        <h1>Collection 2024</h1>
+        <div class="btn btn-dark text-white mt-5 fs-4 px-3 py-2">Shop Now</div>
+      </div>
+    </div>
+    <section class="cards p-3">
+      <div class="row ms-5 mt-5 mx-auto">
+        <div class="col col-3">
+          <div class="card" style="width: 18rem">
+            <img src="./assets/jeans-1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-3">
+          <div class="card" style="width: 18rem">
+            <img src="./assets/jeans-1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-3">
+          <div class="card" style="width: 18rem">
+            <img src="./assets/jeans-1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-3">
+          <div class="card" style="width: 18rem">
+            <img src="./assets/jeans-1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ms-5 mt-5 mx-auto">
+        <div class="col col-3">
+          <div class="card" style="width: 18rem">
+            <img src="./assets/jeans-1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-3">
+          <div class="card" style="width: 18rem">
+            <img src="./assets/jeans-1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-3">
+          <div class="card" style="width: 18rem">
+            <img src="./assets/jeans-1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-3">
+          <div class="card" style="width: 18rem">
+            <img src="./assets/jeans-1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner bg-dark text-white p-5">
+      <div class="content">
+        <h1>Subscribe</h1>
+        <p>To get special offers and VIP treatment</p>
+        <input type="text" class="w-50 p-2" placeholder="Email-Here" />
+        <div class="subscribe btn btn-warning px-3 py-2 d-block mt-3">
+          Subscribe
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="row w-100 p-5">
+        <div class="col-6 w-25 mx-auto">
+          <h1>Contact</h1>
+          <p>Question? Go ahead</p>
+          <form>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Email"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Subject"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Message"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+          </form>
+        </div>
+        <div class="col-3">
+          <h1>About</h1>
+          <a class="d-block mt-2" href="#">About Us</a>
+          <a class="d-block mt-2" href="#">We're hiring</a>
+          <a class="d-block mt-2" href="#">Support</a>
+          <a class="d-block mt-2" href="#">Find store</a>
+          <a class="d-block mt-2" href="#">Shipment</a>
+          <a class="d-block mt-2" href="#">Payment</a>
+          <a class="d-block mt-2" href="#">Gift card</a>
+          <a class="d-block mt-2" href="#">Return</a>
+          <a class="d-block mt-2" href="#">Help</a>
+        </div>
+        <div class="col-3">
+          <h1>Store</h1>
+          <a class="d-block mt-2" href="#">Company Name</a>
+          <a class="d-block mt-2" href="#">Phone</a>
+          <a class="d-block mt-2" href="#">Email</a>
+          <h2 class="my-2">We Accept</h2>
+          <a class="d-block mt-2" href="#">Amex</a>
+          <a class="d-block mt-2" href="#">Credit card</a>
+          <a class="d-block mt-2" href="#">Links</a>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark text-center text-white p-5 fs-3">
+      Designed By Ali Hassan
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
