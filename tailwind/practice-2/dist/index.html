@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>Cool Modern Design</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="h-[10vh] bg-white flex justify-between items-center px-5">
+      <div class="flex justify-center items-center cursor-pointer">
+        <img src="../assets/asset 0.png" alt="" />
+        <span class="ms-1 font-bold text-xl">ToDesktop</span>
+      </div>
+      <div class="hidden md:block">
+        <ul
+          class="flex w-[40vw] justify-between items-center text-lg font-semibold"
+        >
+          <li class="cursor-pointer hover:text-blue-700">Pricing</li>
+          <li class="cursor-pointer hover:text-blue-700">Docs</li>
+          <li class="cursor-pointer hover:text-blue-700">Changelog</li>
+          <li class="cursor-pointer hover:text-blue-700">Blog</li>
+          <li class="cursor-pointer hover:text-blue-700">Login</li>
+        </ul>
+      </div>
+      <div class="hidden md:block">
+        <div
+          class="flex justify-center items-center border-2 border-gray-300 px-3 py-2 rounded-xl cursor-pointer hover:border-slate-400 transition-all ease-in-out"
+        >
+          <img src="../assets/asset 1.svg" alt="" />
+          <span class="mx-2 font-bold">Electron Developer</span>
+          <i class="fa-solid fa-arrow-right mt-1 text-slate-500"></i>
+        </div>
+      </div>
+      <div class="md:hidden" onclick="menu()">
+        <i class="fa-solid fa-bars text-2xl cursor-pointer text-slate-600"></i>
+      </div>
+
+      <div id="nav-dialog" class="fixed bg-white hidden inset-0 md:hidden">
+        <div class="flex justify-between items-center px-5 py-[5px]">
+          <div class="flex justify-center items-center cursor-pointer">
+            <img src="../assets/asset 0.png" alt="" />
+            <span class="ms-1 font-bold text-xl">ToDesktop</span>
+          </div>
+          <div class="md:hidden" onclick="menu()">
+            <i
+              class="fa-solid fa-xmark text-2xl cursor-pointer text-slate-600"
+            ></i>
+          </div>
+        </div>
+
+        <div class="" id="anchors">
+          <ul
+            class="flex flex-col gap-1 justify-center items-start text-lg font-semibold px-10 py-5 border-2 border-t-gray-300"
+          >
+            <li
+              class="cursor-pointer hover:bg-slate-50 rounded-2xl w-full px-5 py-3"
+            >
+              Pricing
+            </li>
+            <li
+              class="cursor-pointer hover:bg-slate-50 rounded-2xl w-full px-5 py-3"
+            >
+              Docs
+            </li>
+            <li
+              class="cursor-pointer hover:bg-slate-50 rounded-2xl w-full px-5 py-3"
+            >
+              Changelog
+            </li>
+            <li
+              class="cursor-pointer hover:bg-slate-50 rounded-2xl w-full px-5 py-3"
+            >
+              Blog
+            </li>
+            <li
+              class="cursor-pointer hover:bg-slate-50 rounded-2xl w-full px-5 py-3"
+            >
+              Login
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="mt-4 flex justify-start items-center mx-10 px-5 py-5 cursor-pointer rounded-2xl hover:bg-slate-50 transition-all ease-in-out"
+        >
+          <img src="../assets/asset 1.svg" alt="" />
+          <span class="mx-2 font-bold">Electron Developer</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <main>
+      <!-- hero section -->
+      <div
+        id="hero"
+        class="min-h-screen bg-gradient-to-br from-purple-50 via-orange-50 to-transparent w-full h-[70vh] flex flex-col justify-center items-center"
+      >
+        <div
+          class="md:w-[65vw] p-10 h-[70vh] flex flex-col justify-center items-center"
+        >
+          <div class="w-full md:flex justify-center">
+            <div
+              class="bg-yellow-100 flex justify-center items-center gap-2 px-3 py-1 hover:drop-shadow-lg rounded-lg border border-yellow-300 cursor-pointer mb-5 hover:gap-3 transition-all delay-150 w-32"
+            >
+              <i class="fa-solid fa-circle text-yellow-400 text-[10px]"></i>
+              <span>v0.22.3</span>
+              <i class="fa-solid fa-arrow-right mt-1 text-yellow-500"></i>
+            </div>
+          </div>
+          <div class="md:flex gap-5 my-5 hidden">
+            <div>
+              <i class="fa-solid fa-file-code" style="color: #c7c7c7"></i>
+              <span class="text-gray-600">Code Optional</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-hand" style="color: #c7c7c7"></i>
+              <span class="text-gray-600">Drag & drop builder</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-book" style="color: #c7c7c7"></i>
+              <span class="text-gray-600">Windows, Mac, Linux</span>
+            </div>
+          </div>
+          <h1 class="md:text-8xl text-5xl font-semibold md:text-center">
+            Web app to desktop app in minute
+          </h1>
+          <p
+            class="md:text-3xl text-2xl w-full md:w-[80%] text-gray-600 my-5 md:text-center"
+          >
+            Take your web app codebase and transform it into a cross platform
+            desktop app with native functionality.
+          </p>
+          <div class="mt-5 w-full md:flex justify-center">
+            <button
+              class="bg-blue-700 hover:bg-blue-600 md:w-52 font-bold text-white rounded-lg px-5 py-3 me-5 w-full my-5"
+            >
+              Download Now
+            </button>
+            <button
+              class="bg-white font-bold hover:border-slate-500 md:w-52 text-black rounded-lg border w-full border-slate-300 px-5 py-3 my-5"
+            >
+              Read Docs
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
